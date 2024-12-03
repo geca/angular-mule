@@ -17,6 +17,9 @@ import { RouterModule } from '@angular/router';
           <button mat-raised-button color="accent" routerLink="/directive-test">
             Directive test
           </button>
+          <button mat-raised-button color="accent" routerLink="/responsive">
+            Responsive
+          </button>
         </nav>
       </mat-toolbar-row>
     </mat-toolbar>
