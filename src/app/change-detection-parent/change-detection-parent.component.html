@@ -1,0 +1,22 @@
+<test #test /><test-push #testPush style="font-weight: bolder" />
+<test-push-save #testPushSave />
+
+<button (click)="test.data = testPush.data = testPushSave.data = { value: 1 }">
+  Set datas
+</button>
+
+<test [data]="data" />
+<test-push [data]="data" />
+<test-push-save [data]="data" />
+
+<button (click)="data = { value: 1 }">Set self</button>
+
+<ul>
+  <li>
+    <code>OnPush</code>
+    marks component for check only if 1) it's inputs are updated via binding (
+    <i>Set self</i> button) ot 2) if the component itself (or its children)
+    dispatches an event.
+  </li>
+  <li>Bold input needs <code>markForCheck</code> to work properly.</li>
+</ul>

@@ -20,6 +20,13 @@ import { RouterModule } from '@angular/router';
           <button mat-raised-button color="accent" routerLink="/responsive">
             Responsive
           </button>
+          <button
+            mat-raised-button
+            color="accent"
+            routerLink="/change-detection"
+          >
+            Change detection
+          </button>
         </nav>
       </mat-toolbar-row>
     </mat-toolbar>
